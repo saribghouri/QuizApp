@@ -1,0 +1,224 @@
+* {
+  font-family: "verdana", cursive, sans-serif;
+  color: black;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./image/istockphoto-1169152911-612x612.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.app {
+  width: 450px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  /* box-shadow: 10px 42px 0px rgba(63,59,59,0.75); */
+  justify-content: space-evenly;
+  /* background-color: #234668; */
+  text-align: center;
+  /* background-image: url(./image/istockphoto-174977447-170667a.jpg); */
+   background-attachment: fixed;
+}
+.score-section {
+  margin-top: 50px;
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+  color: goldenrod;
+}
+
+.question-count span {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: goldenrod;
+
+}
+
+.question-text {
+  margin: 1em 0 0.5em 0;
+  color: #343434;
+  font-weight: normal;
+  font-family: "Ultra", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white, 0 3px #777;
+}
+
+.timer-text {
+  background: rgb(red, green, blue);
+  padding: 145px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(red, green, blue);
+
+  border-radius: 15px;
+  text-align: center;
+}
+
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+button {
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  background-color: #152254;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #f4bd08;
+  cursor: pointer;
+}
+
+.btns {
+  max-width: 200px;
+  margin-top: 10px;
+}
+
+h5 {
+  margin: 0.8em 0 0.5em 0;
+  color: rgb(222, 222, 222);
+  font-weight: normal;
+  font-family: "Orienta", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  counter-increment: section-2;
+  counter-reset: section-3 section-4;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+}
+
+.transparent {
+  position: relative;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  vertical-align: middle;
+  color: #ffffff;
+  display: inline-block;
+  border-width: 0;
+  border-style: solid;
+  border-color: #efc019;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: transparent;
+  width: calc(100% / 2);
+  font-size: 12px;
+  color: #f3f3f3;
+  font-weight: bold;
+}
+
+.transparent span {
+  z-index: 20;
+  position: relative;
+}
+
+.transparent::before,
+.transparent::after {
+  content: "";
+  position: absolute;
+  border-color: inherit;
+  border-style: inherit;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+
+  color: white;
+}
+
+.transparent::before {
+  border-width: 2px 2px 0 2px;
+  top: 0;
+  transform-origin: center bottom;
+  transform: perspective(0.5rem) rotateX(3deg);
+}
+
+.transparent::after {
+  border-width: 0 2px 2px 2px;
+  bottom: 0;
+  transform-origin: center top;
+  transform: perspective(0.5rem) rotateX(-3deg);
+}
+
+
+.bold{
+    position: relative;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+    vertical-align: middle;
+    color: #ffffff;
+    display: inline-block;
+    border-width: 0;
+    border-style: solid;
+    border-color: #efc019;
+    padding: 0.5rem;
+    cursor: pointer;
+    background: transparent;
+    width: calc(50% / 1);
+    font-size: 12px;
+    color: #f3f3f3;
+    font-weight: bold;
+
+}
+
+
+.bold span {
+    z-index: 20;
+    position: relative;
+  }
+  
+
+  .bold::before,
+.bold::after {
+  content: "";
+  position: absolute;
+  border-color: inherit;
+  border-style: inherit;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+
+  color: white;
+}
+
+.bold::before {
+  border-width: 2px 2px 0 2px;
+  top: 0;
+  transform-origin: center bottom;
+  transform: perspective(0.5rem) rotateX(3deg);
+}
+
+.bold::after {
+  border-width: 0 2px 2px 2px;
+  bottom: 0;
+  transform-origin: center top;
+  transform: perspective(0.5rem) rotateX(-3deg);
+}
